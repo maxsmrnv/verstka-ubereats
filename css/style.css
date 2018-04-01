@@ -1,0 +1,52 @@
+header {
+    background-color: white;
+    box-shadow: 0 20px 50px -20px rgba(38, 38, 38, 0.16);
+    padding-top: 15px;
+    padding-bottom: 15px;
+    position: fixed;
+    width: 100%;
+}
+
+/*адрес доставки + время доставки */
+
+.deliveryTime {
+    /*TODO нужнаф форма выбора выбора даты+времени*/
+}
+
+.deliveryAddress {
+    height: 40px;
+    border: 1px solid #E0E0E0;
+    border-radius: 2px;
+}
+
+/* кнопки */
+
+.btn {
+    height: 40px;
+    font-family: Arial;
+    font-size: 14px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-right: 16px;
+    padding-left: 16px;
+    border-radius: 2px;
+    /*outline:none;*/
+}
+
+.btn--white {
+    background-color: white;
+    color: black;
+    border: 1px solid #E0E0E0;
+}
+
+.btn--black {
+    background-color: black;
+    color: white;
+    border: 0;
+    /*outline:none;*/
+}
+
+.searchBar {
+    padding-top: 112px;
+    height: 1000px;
+}
