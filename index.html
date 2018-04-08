@@ -4,37 +4,35 @@
     <meta charset="UTF-8">
     <title>Uber Eats</title>
     <link rel="stylesheet" href="node_modules/normalize.css/normalize.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <link rel="stylesheet" href="css/grid.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
+
+
 <body>
-
 <header>
-    <div class="row container jstf-cntr algn-cntr">
-
-        <div class="row col-3">
-            <a class="firmLogo" href="#">
-                <img src="media/icons/logo.svg" alt="UBER EATS">
+    <div class="container">
+        <div class="row algn-cntr col-12">
+            <a class="firmLogo--header" href="#">
+                <img src="media/icons/logo.svg" alt="">
             </a>
-        </div>
 
-        <div class="row-nowrap col-5 algn-cntr">
-            <button class="deliveryTime btn btn--white col-2">ASAP</button>
-            <span class="col-1">to</span>
-            <input class="deliveryAddress col-9" placeholder="Enter your address" type="text">
-        </div>
+            <button class="deliveryTime btn btn--white">ASAP</button>
+            <span class="customTextEl customTextEl--head">to</span>
 
-        <div class="row col-3 jstf-arround">
-            <button class="simpleBtn btn btn--white">Sign In</button>
-            <button class="simpleBtn btn btn--black">Register</button>
-        </div>
+            <div class="deliveryAddress">
+                <img class="deliveryAddress__locationIcon" src="media/icons/location.svg" alt="">
+                <input class="deliveryAddress__locationInpt" placeholder="Enter your address" type="text"
+                       value="ul. Bolshaya Dmitrovka,22 ">
+            </div>
+            <button class="signBtn btn btn--white">Sign In</button>
+            <button class="regBtn btn btn--black">Register</button>
 
-        <div class="col-1">
-            <a class="cartBtn" href="#">
+            <a class="" href="#">
                 <img src="media/icons/basket.svg" alt="">
             </a>
         </div>
-
     </div>
 </header>
 
@@ -43,73 +41,156 @@
 
         <div class="searchBar row-nowrap">
             <img class="searchBar__icon" src="media/icons/search.svg" alt="--O">
-            <input class="searchBar__search" type="text" placeholder="Search for restaurant or cuisine">
+            <input class="searchBar__inpt" type="text" placeholder="Search for restaurant or cuisine">
         </div>
 
         <div class="restaurantsSearchResult">
-
-            <div class="restaurantsSearchResult__city">
+            <div class="restaurantsSearchResult__caption">
                 Moscow Restaurants
             </div>
             <div class="restaurantsSearchResult__carts">
                 <div class="restaurantCart row col-4">
-                    <img src="media/photo/mcdonalds.png" alt="mcdonalds" class="restaurantCart__photo">
+                    <img src="media/photo-restaurants/mcdonalds.png" alt="mcdonalds" class="restaurantCart__photo">
                     <span class="restaurantCart__name">Макдоналдс — Газетный</span>
                     <span class="restaurantCart__category">₽₽ • Бургеры</span>
                     <span class="restaurantCart__cookTime">25 - 35 Min</span>
                 </div>
 
                 <div class="restaurantCart row col-4">
-                    <img src="media/photo/mcdonalds.png" alt="mcdonalds" class="restaurantCart__photo">
+                    <img src="media/photo-restaurants/barBqCafe.png" alt="mcdonalds" class="restaurantCart__photo">
                     <span class="restaurantCart__name">Макдоналдс — Газетный</span>
                     <span class="restaurantCart__category">₽₽ • Бургеры</span>
                     <span class="restaurantCart__cookTime">25 - 35 Min</span>
                 </div>
 
                 <div class="restaurantCart row col-4">
-                    <img src="media/photo/mcdonalds.png" alt="mcdonalds" class="restaurantCart__photo">
+                    <img src="media/photo-restaurants/cinnabon.png" alt="mcdonalds" class="restaurantCart__photo">
                     <span class="restaurantCart__name">Макдоналдс — Газетный</span>
                     <span class="restaurantCart__category">₽₽ • Бургеры</span>
                     <span class="restaurantCart__cookTime">25 - 35 Min</span>
                 </div>
 
                 <div class="restaurantCart row col-4">
-                    <img src="media/photo/mcdonalds.png" alt="mcdonalds" class="restaurantCart__photo">
+                    <img src="media/photo-restaurants/dimsum.png" alt="mcdonalds" class="restaurantCart__photo">
                     <span class="restaurantCart__name">Макдоналдс — Газетный</span>
                     <span class="restaurantCart__category">₽₽ • Бургеры</span>
                     <span class="restaurantCart__cookTime">25 - 35 Min</span>
                 </div>
 
+                <div class="restaurantCart row col-4">
+                    <img src="media/photo-restaurants/dvijOk.png" alt="mcdonalds" class="restaurantCart__photo">
+                    <span class="restaurantCart__name">Макдоналдс — Газетный</span>
+                    <span class="restaurantCart__category">₽₽ • Бургеры</span>
+                    <span class="restaurantCart__cookTime">25 - 35 Min</span>
+                </div>
+
+                <div class="restaurantCart row col-4">
+                    <img src="media/photo-restaurants/NyaNHA.png" alt="mcdonalds" class="restaurantCart__photo">
+                    <span class="restaurantCart__name">Макдоналдс — Газетный</span>
+                    <span class="restaurantCart__category">₽₽ • Бургеры</span>
+                    <span class="restaurantCart__cookTime">25 - 35 Min</span>
+                </div>
+
+                <div class="restaurantCart row col-4">
+                    <img src="media/photo-restaurants/pizzalove.png" alt="mcdonalds" class="restaurantCart__photo">
+                    <span class="restaurantCart__name">Макдоналдс — Газетный</span>
+                    <span class="restaurantCart__category">₽₽ • Бургеры</span>
+                    <span class="restaurantCart__cookTime">25 - 35 Min</span>
+                </div>
+
+                <div class="restaurantCart row col-4">
+                    <img src="media/photo-restaurants/tochkaDzi.png" alt="mcdonalds" class="restaurantCart__photo">
+                    <span class="restaurantCart__name">Макдоналдс — Газетный</span>
+                    <span class="restaurantCart__category">₽₽ • Бургеры</span>
+                    <span class="restaurantCart__cookTime">25 - 35 Min</span>
+                </div>
+
+                <div class="restaurantCart row col-4">
+                    <img src="media/photo-restaurants/zyuCafe.png" alt="mcdonalds" class="restaurantCart__photo">
+                    <span class="restaurantCart__name">Макдоналдс — Газетный</span>
+                    <span class="restaurantCart__category">₽₽ • Бургеры</span>
+                    <span class="restaurantCart__cookTime">25 - 35 Min</span>
+                </div>
             </div>
-
         </div>
-    </div>
     </div>
 </main>
 
 <footer>
     <div class="container">
-        <div class="row-column">
-            <div class="row">
-                <a class="firmLogo--large" href="#">
-                    <!--<img src="media/icons/logo.svg" alt="UBER EATS">-->
+        <div class="row-column col-12">
+            <a class="firmLogo--footer" href="#">
+                <img src="media/icons/white-logo.svg" alt="UBER EATS">
+            </a>
+            <div class="sectionLine"></div>
+            <div class="row-nowrap nav">
+                <div class="row-column col-4">
+                    <div class="language row algn-cntr">
+                        <img class="language__shapeIcon" src="media/icons/world.svg" alt="">
+                        <div class="language__val">ENGLISH</div>
+                        <img class="language_arrowIcon" src="media/icons/vector.png" alt="">
+                    </div>
+                    <div class="uberTag customTextEl row">
+                        <div class="uberTag_hash">#</div>
+                        <div class="uberTag_tag">UberEats</div>
+                    </div>
+                    <div class="socialLinks row">
+                        <a class="socialLinks__facebook" href="#">
+                            <img src="media/icons/facebook.svg" alt="">
+                        </a>
+                        <a class="socialLinks__twitter" href="#">
+                            <img src="media/icons/twitter.svg" alt="">
+                        </a>
+                        <a class="socialLinks__instagram" href="#">
+                            <img src="media/icons/instagram.svg" alt="">
+                        </a>
+
+                    </div>
+                </div>
+                <div class="row-column col-4">
+                    <div class="nav__element">
+                        <a href="#">About UberEats</a>
+                    </div>
+                    <div class="nav__element">
+                        <a href="#">Become a Delivery Partner</a>
+                    </div>
+                    <div class="nav__element">
+                        <a href="#">Become a Restaurant Partner</a>
+                    </div>
+                </div>
+                <div class="row-column col-4">
+                    <div class="nav__element">
+                        <a href="#">See all cities</a>
+                    </div>
+                    <div class="nav__element">
+                        <a href="#">Pricing</a>
+                    </div>
+                    <div class="nav__element">
+                        <a href="#">Help</a>
+                    </div>
+                    <div class="nav__element">
+                        <a href="#">FAQs</a>
+                    </div>
+                </div>
+            </div>
+            <div class="sectionLine"></div>
+            <div class="downloads row jstf-cntr">
+                <a href="#" class="downloads__ios">
+                    <img src="media/photo-download/badge-download-on-the-app-store.svg" alt="">
+                </a>
+                <a href="#" class="downloads__android">
+                    <img src="media/photo-download/googleplay.png" alt="">
                 </a>
             </div>
-            <div class="row">
-                <div class="lanuage"></div>
-                <div class="socialLinks"></div>
-                <nav>
-
-                </nav>
-            </div>
-            <div class="downloads row">
-                <div class="downloads__android"></div>
-                <div class="downloads__ios"></div>
-            </div>
+            <div class="sectionLine"></div>
             <div class="additionalInfo row">
-                <div></div>
-                <div></div>
-                <div></div>
+                <div class="col-4">© 2017 Uber Technologies Inc.</div>
+                <div class="col-4">
+                    <a href="#">Privacy</a>
+                </div>
+                <div class="col-4">
+                    <a href="#">Terms</a>
+                </div>
             </div>
         </div>
     </div>
