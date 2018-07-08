@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Uber Eats</title>
     <link rel="stylesheet" href="node_modules/normalize.css/normalize.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
@@ -10,31 +11,33 @@
 </head>
 
 
-<body>
-<header>
+<body class="body">
+<header class="header">
     <div class="container">
         <div class="row algn-cntr col-12">
-            <a class="firmLogo--header" href="#">
-                <img src="media/icons/logo.svg" alt="">
+            <a href="#">
+                <img class="firmLogo--header" src="media/icons/logo.svg" alt="">
             </a>
 
-            <button class="deliveryTime btn btn--white">ASAP</button>
-            <span class="customTextEl customTextEl--head">to</span>
-
-            <div class="deliveryAddress">
-                <img class="deliveryAddress__locationIcon" src="media/icons/location.svg" alt="">
-                <input class="deliveryAddress__locationInpt" placeholder="Enter your address" type="text"
-                       value="ul. Bolshaya Dmitrovka,22 ">
+            <div class="deliveryInfo row algn-cntr">
+                <div class="deliveryInfo__time row jstf-cntr algn-cntr">ASAP</div>
+                <span class="deliveryInfo__utilityText">to</span>
+                <input class="deliveryAddress"
+                       placeholder="Enter your address"
+                       type="text"
+                       value="ul. Bolshaya Dmitrovka,22">
             </div>
+
             <button class="signBtn btn btn--white">Sign In</button>
             <button class="regBtn btn btn--black">Register</button>
 
-            <a class="" href="#">
+            <a class="basket" href="#">
                 <img src="media/icons/basket.svg" alt="">
             </a>
         </div>
     </div>
 </header>
+
 
 <main>
     <div class="container">
@@ -44,73 +47,108 @@
             <input class="searchBar__inpt" type="text" placeholder="Search for restaurant or cuisine">
         </div>
 
+        <div class="deliveryInfo--mobile">
+            <div class="row">
+                <span class="col-3">When</span>
+                <span class="col-2 row">To</span>
+            </div>
+
+
+            <div class="row-nowrap algn-cntr col-12">
+                <div class="deliveryInfo__time row jstf-cntr algn-cntr">ASAP</div>
+                <input class="deliveryAddress"
+                       placeholder="Enter your address"
+                       type="text"
+                       value="ul. Bolshaya Dmitrovka,22">
+            </div>
+        </div>
+
         <div class="restaurantsSearchResult">
             <div class="restaurantsSearchResult__caption">
                 Moscow Restaurants
             </div>
             <div class="restaurantsSearchResult__carts row col-12">
-                <div class="restaurantCart restaurantCart-active">
-                    <img src="media/photo-restaurants/mcdonalds.png" alt="" class="restaurantCart__photo">
-                    <span class="restaurantCart__name">Макдоналдс — Газетный</span>
-                    <span class="restaurantCart__category">₽₽ • Бургеры</span>
-                    <span class="restaurantCart__cookTime">25 - 35 Min</span>
-                </div>
+                <a href="#">
+                    <div class="restaurantCard">
+                        <img src="media/photo-restaurants/mcdonalds.png" alt="" class="restaurantCard__photo">
+                        <span class="restaurantCard__name">Макдоналдс — Газетный</span>
+                        <span class="restaurantCard__category">₽₽ • Бургеры</span>
+                        <span class="restaurantCard__cookTime">25 - 35 Min</span>
+                    </div>
+                </a>
 
-                <div class="restaurantCart">
-                    <img src="media/photo-restaurants/barBqCafe.png" alt="" class="restaurantCart__photo">
-                    <span class="restaurantCart__name">Bar BQ Cafe — Манежная</span>
-                    <span class="restaurantCart__category">₽₽₽ • Европейская</span>
-                    <span class="restaurantCart__cookTime">30 - 40 Min</span>
-                </div>
+                <a href="#">
+                    <div class="restaurantCard">
+                        <img src="media/photo-restaurants/barBqCafe.png" alt="" class="restaurantCard__photo">
+                        <span class="restaurantCard__name">Bar BQ Cafe — Манежная</span>
+                        <span class="restaurantCard__category">₽₽₽ • Европейская</span>
+                        <span class="restaurantCard__cookTime">30 - 40 Min</span>
+                    </div>
+                </a>
 
-                <div class="restaurantCart">
-                    <img src="media/photo-restaurants/cinnabon.png" alt="" class="restaurantCart__photo">
-                    <span class="restaurantCart__name">Cinnabon</span>
-                    <span class="restaurantCart__category">₽ • Выпечка • Десерты • Капкейки</span>
-                    <span class="restaurantCart__cookTime">25 - 35 Min</span>
-                </div>
+                <a href="#">
+                    <div class="restaurantCard">
+                        <img src="media/photo-restaurants/cinnabon.png" alt="" class="restaurantCard__photo">
+                        <span class="restaurantCard__name">Cinnabon</span>
+                        <span class="restaurantCard__category">₽ • Выпечка • Десерты • Капкейки</span>
+                        <span class="restaurantCard__cookTime">25 - 35 Min</span>
+                    </div>
+                </a>
 
-                <div class="restaurantCart">
-                    <img src="media/photo-restaurants/dimsum.png" alt="" class="restaurantCart__photo">
-                    <span class="restaurantCart__name">DimSum & Co — ЦДМ</span>
-                    <span class="restaurantCart__category">₽ • Японская • Китайская • Азиатская</span>
-                    <span class="restaurantCart__cookTime">40 - 50 Min</span>
-                </div>
+                <a href="#">
+                    <div class="restaurantCard">
+                        <img src="media/photo-restaurants/dimsum.png" alt="" class="restaurantCard__photo">
+                        <span class="restaurantCard__name">DimSum & Co — ЦДМ</span>
+                        <span class="restaurantCard__category">₽ • Японская • Китайская • Азиатская</span>
+                        <span class="restaurantCard__cookTime">40 - 50 Min</span>
+                    </div>
+                </a>
 
-                <div class="restaurantCart">
-                    <img src="media/photo-restaurants/dvijOk.png" alt="" class="restaurantCart__photo">
-                    <span class="restaurantCart__name">ДвижОК — Манежная</span>
-                    <span class="restaurantCart__category">₽ • Американская • Европейская</span>
-                    <span class="restaurantCart__cookTime">35 - 40 Min</span>
-                </div>
+                <a href="#">
+                    <div class="restaurantCard">
+                        <img src="media/photo-restaurants/dvijOk.png" alt="" class="restaurantCard__photo">
+                        <span class="restaurantCard__name">ДвижОК — Манежная</span>
+                        <span class="restaurantCard__category">₽ • Американская • Европейская</span>
+                        <span class="restaurantCard__cookTime">35 - 40 Min</span>
+                    </div>
+                </a>
 
-                <div class="restaurantCart">
-                    <img src="media/photo-restaurants/NyaNHA.png" alt="" class="restaurantCart__photo">
-                    <span class="restaurantCart__name">НЯ — NHA</span>
-                    <span class="restaurantCart__category">₽₽ • Вьетнамская</span>
-                    <span class="restaurantCart__cookTime">30 - 40 Min</span>
-                </div>
+                <a href="#">
+                    <div class="restaurantCard">
+                        <img src="media/photo-restaurants/NyaNHA.png" alt="" class="restaurantCard__photo">
+                        <span class="restaurantCard__name">НЯ — NHA</span>
+                        <span class="restaurantCard__category">₽₽ • Вьетнамская</span>
+                        <span class="restaurantCard__cookTime">30 - 40 Min</span>
+                    </div>
+                </a>
 
-                <div class="restaurantCart">
-                    <img src="media/photo-restaurants/pizzalove.png" alt="" class="restaurantCart__photo">
-                    <span class="restaurantCart__name">PIZZELOVE</span>
-                    <span class="restaurantCart__category">₽₽ • Пицца</span>
-                    <span class="restaurantCart__cookTime">25 - 35 Min</span>
-                </div>
+                <a href="#">
+                    <div class="restaurantCard">
+                        <img src="media/photo-restaurants/pizzalove.png" alt="" class="restaurantCard__photo">
+                        <span class="restaurantCard__name">PIZZELOVE</span>
+                        <span class="restaurantCard__category">₽₽ • Пицца</span>
+                        <span class="restaurantCard__cookTime">25 - 35 Min</span>
+                    </div>
+                </a>
 
-                <div class="restaurantCart">
-                    <img src="media/photo-restaurants/tochkaDzi.png" alt="" class="restaurantCart__photo">
-                    <span class="restaurantCart__name">Точка Дзы — Цветной</span>
-                    <span class="restaurantCart__category">₽₽ • Вьетнамская</span>
-                    <span class="restaurantCart__cookTime">35 - 45 Min</span>
-                </div>
+                <a href="#">
+                    <div class="restaurantCard">
+                        <img src="media/photo-restaurants/tochkaDzi.png" alt="" class="restaurantCard__photo">
+                        <span class="restaurantCard__name">Точка Дзы — Цветной</span>
+                        <span class="restaurantCard__category">₽₽ • Вьетнамская</span>
+                        <span class="restaurantCard__cookTime">35 - 45 Min</span>
+                    </div>
+                </a>
 
-                <div class="restaurantCart">
-                    <img src="media/photo-restaurants/zyuCafe.png" alt="" class="restaurantCart__photo">
-                    <span class="restaurantCart__name">Zю кафе — Тверская</span>
-                    <span class="restaurantCart__category">₽₽ • Японская</span>
-                    <span class="restaurantCart__cookTime">25 - 35 Min</span>
-                </div>
+                <a href="#">
+                    <div class="restaurantCard">
+                        <img src="media/photo-restaurants/zyuCafe.png" alt="" class="restaurantCard__photo">
+                        <span class="restaurantCard__name">Zю кафе — Тверская</span>
+                        <span class="restaurantCard__category">₽₽ • Японская</span>
+                        <span class="restaurantCard__cookTime">25 - 35 Min</span>
+                    </div>
+                </a>
+
             </div>
         </div>
     </div>
@@ -118,24 +156,27 @@
 
 <footer>
     <div class="container">
-        <div class="row-column">
+        <div class="row-column col-1">
             <a class="firmLogo--footer" href="#">
                 <img src="media/icons/white-logo.svg" alt="UBER EATS">
             </a>
             <div class="sectionLine"></div>
-            <div class="row-nowrap nav">
 
-                <div class="nav-block row-column col-4">
-                    <div class="language row algn-cntr">
+            <div class="nav row col-12">
+
+                <div class="nav-block row-column col-12 col-md-4">
+
+                    <!--11111111-->
+                    <div class="language row-nowrap algn-cntr">
                         <img class="language__shapeIcon" src="media/icons/world.svg" alt="">
                         <div class="language__val">ENGLISH</div>
                         <img class="language_arrowIcon" src="media/icons/vector.png" alt="">
                     </div>
-                    <div class="uberTag customTextEl row">
+                    <div class="uberTag customTextEl row-nowrap">
                         <div class="uberTag_hash">#</div>
                         <div class="uberTag_tag">UberEats</div>
                     </div>
-                    <div class="socialLinks row">
+                    <div class="socialLinks">
                         <a class="socialLinks__facebook" href="#">
                             <img src="media/icons/facebook.svg" alt="">
                         </a>
@@ -145,11 +186,10 @@
                         <a class="socialLinks__instagram" href="#">
                             <img src="media/icons/instagram.svg" alt="">
                         </a>
-
                     </div>
                 </div>
-
-                <ul class="nav-block row-column col-4">
+                <!--222222-->
+                <ul class="nav-block row-column-nowrap col-12 col-md-4">
                     <li class="nav-block__element">
                         <a href="#">About UberEats</a>
                     </li>
@@ -160,8 +200,8 @@
                         <a href="#">Become a Restaurant Partner</a>
                     </li>
                 </ul>
-
-                <ul class="nav-block row-column col-4">
+                <!--3333333-->
+                <ul class="nav-block row-column-nowrap col-12 col-md-4">
                     <li class="nav-block__element">
                         <a href="#">See all cities</a>
                     </li>
@@ -176,6 +216,7 @@
                     </li>
                 </ul>
 
+
             </div>
             <div class="sectionLine"></div>
             <div class="downloads row jstf-cntr">
@@ -187,14 +228,18 @@
                 </a>
             </div>
             <div class="sectionLine"></div>
-            <div class="additionalInfo row">
-                <div class="col-4">© 2017 Uber Technologies Inc.</div>
-                <div class="col-4">
-                    <a href="#">Privacy</a>
-                </div>
-                <div class="col-4">
-                    <a href="#">Terms</a>
-                </div>
+            <div class="additionalInfo">
+                <ul class="nav-block row col-12">
+                    <li class="nav-block__element row col-12 col-md-4">
+                        <div>© 2017 Uber Technologies Inc.</div>
+                    </li>
+                    <li class="nav-block__element row col-12 col-md-4">
+                        <a href="#">Privacy</a>
+                    </li>
+                    <li class="nav-block__element row col-12 col-md-4">
+                        <a href="#">Terms</a>
+                    </li>
+                </ul>
             </div>
         </div>
     </div>
