@@ -1,3 +1,2 @@
-# 
-[verstka-ubereats(Demo)](https://maxsmrnv.github.io./)
+# [verstka-ubereats(Demo)](https://maxsmrnv.github.io./)
 
